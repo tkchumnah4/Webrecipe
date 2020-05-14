@@ -13,7 +13,8 @@
             <nav>
                 <ul>
                     <li><a href="#intro">Introduction</a></li>
-                    <li><a href="#attributes">Attributes</a></li>
+                    <li><a href="#attributes">Attributes:  href and target</a></li>
+                    <li><a href="#attributes2">Attributes: media and download</a></li>
                 </ul>
             </nav>
         </header>
@@ -65,7 +66,36 @@
                     <li>A link to an element on the same page e.g href="#intro"</li>
                     <li>protocols such as "mailto:123@tk.com</li>
                 </ol>
+
+                <h4>The 'target' attribute</h4>
+                <p>The <mark>target</mark> specifies the destination where the linked URL in <mark>href</mark> should be opened.
+                <br>It can take a variety of different values, but for our purposes, use below:</p>
+                <figure>
+                    <img src="images/target.png"
+                        alt="A picture showing target's attribute"
+                        title="Self and blank are explained in the picture"
+                        width="800" height="400"> 
+                </figure>
+
+            </article>
+            <hr>
+            <article>
+                <header id="attributes2">
+                    <h3>Attributes : Media and download</h3>
+                </header>
+                <h4>The 'media' attribute</h4>
+                <p>The <mark>media</mark> attribute was introduced in HTML5.It is used to specify what kind of media or device the URL
+                <br> you linked to in href is optimized for. The URL could be target for special devices like projectors, speech synthesizers
+                <br>or pages meant to be printed. It is useful if you want to cater your document that the URL points to a particular device type.  </p>
                 
+                <h3>The 'Download' attribute</h3>
+                <p>The download attribute is also in new in HTML5 and it makes a link download a file instead of navigate to another location.
+                    <br>It takes in the filename as value but the value is optional.So the download attribute can be specified in the following:
+                </p>
+                <ol>
+                    <li><p>&lt;a href="assets/hello.txt" download&gt;</p></li>
+                    <li><p>&lt;a href="assets/hello.txt" download[="new-name-for-text-file&gt;</p></li>
+                </ol>
             </article>
         </main>
 
